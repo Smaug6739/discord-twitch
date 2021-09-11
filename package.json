@@ -1,0 +1,36 @@
+{
+  "name": "twitch-notification-on-discord",
+  "version": "1.0.0",
+  "description": "Send a message in a channel when streamer is on stream",
+  "main": "main.js",
+  "scripts": {
+    "build:gulp": "gulp build",
+    "watch:gulp": "gulp watch",
+    "serve:gulp": "gulp serve",
+    "start:gulp": "gulp start",
+    "serve": "npm run serve:gulp -s",
+    "watch": "npm run watch:gulp -s",
+    "build": "npm run build:gulp -s",
+    "start": "npm run start:gulp -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Le-labot/twitch-notification-on-discord.git"
+  },
+  "author": "SlayerMonkey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Le-labot/twitch-notification-on-discord/issues"
+  },
+  "homepage": "https://github.com/Le-labot/twitch-notification-on-discord#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5",
+    "sequelize": "^6.3.3"
+  },
+  "devDependencies": {
+    "yamljs": "^0.3.0"
+  }
+}
