@@ -8,7 +8,7 @@ const prefix = "!";
 
 const client: any = new Client();
 client.setting = YAML.load(path.resolve(__dirname, "../setting.yml"));
-require("./modules/twitchModule")(client);
+require("./modules/TwitchModule")(client);
 
 client.on("ready", () => console.log(`Logged in as ${client.user.tag}!`));
 
