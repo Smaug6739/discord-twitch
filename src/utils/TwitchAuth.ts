@@ -64,6 +64,6 @@ export async function getStream(client, streamerID) {
             },
         })
         .catch((err) => console.log(err));
-    if(!res || res && !res.data) return;
+    if(!res || res && !res.data) return "no data";
     return res.data.data[0];
 }
