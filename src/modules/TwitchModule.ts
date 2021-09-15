@@ -12,6 +12,7 @@ module.exports = async (client) => {
         if (streamers.length < 1) return console.log("Aucun streamer");
         for (const streamer of streamers) {
             const stream = await getStream(client, streamer.twitchUserID);
+            if(stream && stream === "no data") return;
 
             if (!stream) return await updateStreamer(streamer, false);
 
