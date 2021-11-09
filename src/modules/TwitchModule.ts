@@ -29,7 +29,7 @@ module.exports = async (client) => {
                     .attachFiles([attachment])
                     .setThumbnail(streamer.profileImageUrl)
                     .setTitle(stream.title)
-                    .setURL(`https://www.twitch.tv/${stream.login}`)
+                    .setURL(`https://www.twitch.tv/${stream.user_login}`)
                     .addField("Game", stream.game_name, true)
                     .addField("Viewers", `${stream.viewer_count}`, true)
                     .setColor(9521151)
