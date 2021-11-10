@@ -22,7 +22,7 @@ module.exports = async (client) => {
                 //@ts-ignore
                 const chan: TextChannel = client.channels.cache.get("886285800671694888");
                 const attachment = new MessageAttachment(
-                    stream.thumbnail_url.replace("{width}", "1920").replace("{height}", "1080", "thumbnail.png")
+                    stream.thumbnail_url.replace("{width}", "1920").replace("{height}", "1080"), "thumbnail.png"
                 );
                 const embed = new MessageEmbed()
                     .setAuthor(stream.user_name, streamer.profileImageUrl)
